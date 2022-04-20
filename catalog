@@ -1,0 +1,20 @@
+categoriesAndDocuments = new ObservableCollection<EntityBase>();
+
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 0, Parent = null, Title = "Edycja dokumentów", Icon = Settings.Default.RootIcon });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 1, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 0), Title = "Procesy", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 11, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 1), Title = "Procesy gorące", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 12, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 1), Title = "Procesy zimne", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 13, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 1), Title = "Desery", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 14, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 1), Title = "Ciasta", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 2, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 0), Title = "Arkusze monitorowania", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 15, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 2), Title = "Procesy zimne", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 21, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 15), Title = "Arkusz identyfikacji zagrożeń ", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 16, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 2), Title = "Ciasta2", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 5, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 0), Title = "Schematy procesów", Icon = @"/NavModule_One;component/Images/folder.png", });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 6, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 0), Title = "AutoIcon" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 17, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 6), Title = "AutoIcon2" });
+            categoriesAndDocuments.Add(new Catalog() { IDEntity = 22, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 17), Title = "Z Ikoną", Icon = @"/NavModule_One;component/Images/folder.png" });
+            categoriesAndDocuments.Add(new EntityBase() { IDEntity = 33, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 1), Title = "Document1", Icon = @"/NavModule_One;component/Images/document.png" });
+            categoriesAndDocuments.Add(new EntityBase() { IDEntity = 34, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 2), Title = "Document2", Icon = @"/NavModule_One;component/Images/document.png" });
+            categoriesAndDocuments.Add(new EntityBase() { IDEntity = 35, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 5), Title = "Document3", Icon = @"/NavModule_One;component/Images/document.png" });
+            categoriesAndDocuments.Add(new EntityBase() { IDEntity = 36, Parent = categoriesAndDocuments.Single(i => i.IDEntity == 22), Title = "Document4", Icon = @"/NavModule_One;component/Images/document.png" });
